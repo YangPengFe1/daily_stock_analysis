@@ -64,9 +64,8 @@ jobs:
           # 自选股列表（5只）
           STOCK_LIST: 002231,002796,002163,600550,603929
           
-          # 通知渠道 - 暂不配置推送，只生成报告
-          # WECHAT_WEBHOOK_URL: ''
-          FEISHU_WEBHOOK_URL: ''
+          # 通知渠道（启用飞书推送）
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
           # TELEGRAM_BOT_TOKEN: ''
           # TELEGRAM_CHAT_ID: ''
           # EMAIL_SENDER: ''
